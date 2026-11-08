@@ -59,6 +59,23 @@ java -jar alloy.jar exec -f -t text alloy/hcalc-mirror.als
 Alloy 6.2.0 jar bundled. Full argument:
 [`paper/counter-paper.md`](paper/counter-paper.md).
 
+---
+
+## Architecture: Ω-AKASHA XI (11-Agent Decomposition)
+
+PIRTM implements 11 isolated logical worker roles, bounded concurrent execution, a finite-dimensional quantum circuit engine, and an embedding oracle:
+
+- **11 Logical Workers (A01–A11)**: Temporal causality, string theory, M-theory, quantum circuits, Akashic hypothesis (labeled metaphysical), Nostradamus quatrain analysis (labeled historical speculation), recursive reasoning, holography, information theory, Agda verification, and adversarial countermodels.
+- **Quantum Circuit Engine**: Finite-dimensional state simulation, Hadamard, Pauli, Phase, CNOT, Born rule measurement probabilities, and classical reversible baseline comparison.
+- **Embedding Oracle & CAS**: Cryptographic content-addressed storage (SHA-256), immutable append-only provenance, and deterministic lexical fallback retrieval.
+- **Recursive Knowledge Engine**: Bounded hypothesis testing loop with fuel limits, deduplication, and contradiction preservation.
+- **Agda Formal Invariants (I01–I11)**: Mechanically checkable specifications in `agda/PIRTM/Invariants.agda`.
+
+Run test suite:
+```sh
+python3 -m unittest discover tests -v
+```
+
 ## License
 
 [AGPL-3.0-only](LICENSE). Copyright (C) 2026 Ahmad Ali Parr.
