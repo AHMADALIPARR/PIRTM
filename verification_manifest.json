@@ -3,6 +3,23 @@
   "directive": "Ω-AKASHA XI",
   "version": "0.1.0",
   "execution_timestamp_utc": "2026-10-10T00:00:00Z",
+  "lean4": {
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "build_command": "lake build",
+    "build_status": "SUCCESS",
+    "jobs": 5,
+    "sorry_count": 0,
+    "modules": [
+      "PIRTM.Core",
+      "PIRTM.Invariants"
+    ]
+  },
+  "agda": {
+    "specification": "agda/PIRTM/Invariants.agda",
+    "status": "NOT_RUN",
+    "verification_command": "agda --no-libraries -i . agda/PIRTM/Invariants.agda",
+    "notes": "Agda binary not installed in sandbox; pure constructive code without postulates."
+  },
   "workers": {
     "count": 11,
     "agents": [
@@ -19,30 +36,20 @@
       "A11"
     ]
   },
-  "invariants": {
-    "formal_specification": "agda/PIRTM/Invariants.agda",
-    "status": "NOT_RUN",
-    "verification_command": "agda --no-libraries -i . agda/PIRTM/Invariants.agda",
-    "notes": "Agda executable not installed in environment; source files constructed with total functions and zero axioms/postulates."
+  "quantum_experiment": {
+    "dimensions": 2048,
+    "qubits": 11,
+    "adversarial_experiment": "experiments/run_adversarial_experiment.py",
+    "global_distinguishable": true,
+    "subsystem_distinguishable": false
   },
   "tests": {
     "framework": "python3 -m unittest",
-    "test_files": [
-      "tests/test_oracle.py",
-      "tests/test_quantum.py",
-      "tests/test_agents.py",
-      "tests/test_recursive_engine.py"
-    ],
-    "passed": 14,
+    "passed": 17,
     "failed": 0
   },
   "alloy_checks": {
     "vacuity_demo": "UNSAT",
     "hcalc_mirror": "UNSAT"
-  },
-  "retrieval_oracle": {
-    "content_addressed_storage": "SHA-256",
-    "mode": "deterministic_lexical_fallback",
-    "neural_model_simulated": false
   }
 }

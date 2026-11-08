@@ -69,10 +69,17 @@ PIRTM implements 11 isolated logical worker roles, bounded concurrent execution,
 - **Quantum Circuit Engine**: Finite-dimensional state simulation, Hadamard, Pauli, Phase, CNOT, Born rule measurement probabilities, and classical reversible baseline comparison.
 - **Embedding Oracle & CAS**: Cryptographic content-addressed storage (SHA-256), immutable append-only provenance, and deterministic lexical fallback retrieval.
 - **Recursive Knowledge Engine**: Bounded hypothesis testing loop with fuel limits, deduplication, and contradiction preservation.
+- **Lean 4 Machine Verification**: Pinned toolchain `leanprover/lean4:v4.34.1`, lake build with **zero `sorry`** (`PIRTM.Core`, `PIRTM.Invariants`) establishing causal acyclicity, state preservation, reversibility composition, roundtrip codecs, observation non-uniqueness, and adversary indistinguishability.
 - **Agda Formal Invariants (I01–I11)**: Mechanically checkable specifications in `agda/PIRTM/Invariants.agda`.
 
-Run test suite:
+Build Lean 4 proofs:
 ```sh
+lake build
+```
+
+Run test suite & experiments:
+```sh
+python3 experiments/run_adversarial_experiment.py
 python3 -m unittest discover tests -v
 ```
 
