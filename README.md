@@ -31,7 +31,17 @@ Independent review (2026-11-07) confirmed:
 - Benchmarks: central experiment ~0.12 ms, 30-gate evolve ~6.7 ms, 11-agent cycle ~14 ms.
 - Lean 4 and Agda invariants establish elementary properties with zero `sorry`.
 
-See the full determination report for details. The repository is ready for production use as a methodological demonstration and pedagogical quantum-information workbench.
+Full report: [`docs/SCIENTIFIC_DETERMINATION.md`](docs/SCIENTIFIC_DETERMINATION.md)
+
+The repository is ready for production use as a methodological demonstration and pedagogical quantum-information workbench.
+
+---
+
+## Visuals
+
+![Architecture](docs/architecture.svg)
+
+![Quantum Experiment](docs/quantum_experiment.svg)
 
 ---
 
