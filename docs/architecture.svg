@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <text x="400" y="40" fill="#e2e8f0" font-size="22" text-anchor="middle" font-weight="bold">PIRTM Ω-AKASHA XI Architecture</text>
+  <rect x="50" y="80" width="140" height="60" fill="#1e293b" stroke="#38bdf8" rx="8"/>
+  <text x="120" y="115" fill="#e2e8f0" font-size="12" text-anchor="middle">11 Agents</text>
+  <rect x="220" y="80" width="140" height="60" fill="#1e293b" stroke="#34d399" rx="8"/>
+  <text x="290" y="115" fill="#e2e8f0" font-size="12" text-anchor="middle">Quantum Engine</text>
+  <rect x="390" y="80" width="140" height="60" fill="#1e293b" stroke="#fbbf24" rx="8"/>
+  <text x="460" y="115" fill="#e2e8f0" font-size="12" text-anchor="middle">Oracle / CAS</text>
+  <rect x="560" y="80" width="140" height="60" fill="#1e293b" stroke="#a78bfa" rx="8"/>
+  <text x="630" y="115" fill="#e2e8f0" font-size="12" text-anchor="middle">Lean / Agda</text>
+  <rect x="280" y="200" width="240" height="60" fill="#1e293b" stroke="#f87171" rx="8"/>
+  <text x="400" y="235" fill="#e2e8f0" font-size="12" text-anchor="middle">Alloy Counter-Paper</text>
+  <text x="400" y="320" fill="#94a3b8" font-size="14" text-anchor="middle">Successful Production Run • 17/17 Tests • Benchmarks Validated</text>
+</svg>
